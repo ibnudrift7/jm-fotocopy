@@ -1,0 +1,253 @@
+{% extends layout %}
+{% block title %}About Us - {% endblock %}
+{% block menu %}about{% endblock %}
+{% block content %}
+<section class="hero clearfix section--video">
+	<a class="hero__trigger" href="#content">Scroll Down</a>
+	<div class="hero__media hero__media--video" data-layzr="{{ app.request.baseurl }}/uploads/about-hero.jpg?{{ set_random }}" data-layzr-bg>
+		<div class="hero__media-cover"></div>
+	</div>
+</section>
+
+<section class="section section--intro align-center clearfix section-homebwhitebl insides-pabout-inner pt-0impo">
+	<div class="wrapper">
+		<div class="row">
+			<div class="span12 center-block"> {# span11 #}
+				<div class="intro__block span9 center-block animate">
+					<div id="our-brand" class="pt5pers">
+						<div class="clear height-15"></div>
+						<div class="content-text">
+							<h1 class="child-title-p">ABOUT US</h1>
+						</div>
+						<div class="clear"></div>
+							<div class="visible-lg visible-md">
+								<h2 class="title">Our Brand
+							</h2>
+							</div>
+							<div class="visible-xs visible-sm">
+								<h2 class="title">Our Brand
+								</h2>
+							</div>
+							<div class="mwdesc2-home tengah text-center content-text">
+								<p>Gianni Furniture and Interior Design, established for more than 30 years, is well known for its timeless and unique variety of furniture collections.</p>
+
+								<p>Our wide variety of furniture collection includes: CONTEMPORARY FURNITURE combination of the old and new, CLASSIC FURNITURE with vibrant colours and MODERN-MINIMALIST FURNITURE with exotic curves and styles.</p>
+
+								<p>We also provide a one stop solution to your house with our DESIGN &amp; MAKE Services, which helps our clients from the designing process to the furniture making. Our ability to CUSTOM Make our furniture will ensure that every house will be designed exclusively for our clients.</p>
+								<div class="clear"></div>
+							</div> <div class="clear"></div>
+					</div>
+					<div class="clear height-50"></div>
+					<div class="clear height-50"></div>
+					<div class="clear height-15"></div>
+					<div id="our-showroom">
+						<div class="visible-lg visible-md">
+							<h2 class="title">Our Showroom
+						</h2>
+						</div>
+						<div class="visible-xs visible-sm">
+							<h2 class="title">Our Showroom
+							</h2>
+						</div>
+						<div class="mwdesc2-home tengah text-center content-text">
+							<p>Our showroom is located at the heart of West Surabaya (Jln Bukit Darmo Boulevard 10-D, Surabaya, Indonesia). It is continually changing and evolving with new unique pieces of furniture to provide the needs of all our clients.</p>
+							<p>Our showroom opens: Monday to Friday, 9.00AM - 7.30PM Saturday, 9.00AM - 7.00PM.</p>
+							<p>Visit us to have a feel of our relaxing and mind-blowing showroom which caters to all your designing needs.</p>
+
+							<div class="clear"></div>
+						</div> <div class="clear"></div>
+					</div>
+					<div class="clear height-50"></div>
+					<div class="clear height-50"></div>
+					<div class="clear height-15"></div>
+					<div id="our-team">
+						<div class="visible-lg visible-md">
+							<h2 class="title">Our Team
+						</h2>
+						</div>
+						<div class="visible-xs visible-sm">
+							<h2 class="title">Our Team
+							</h2>
+						</div>
+						<div class="tengah text-center content-text">
+							<div class="clear height-50"></div>
+							<div class="listing-team-gianni">
+								<div class="row default">
+									<div class="col-md-6">
+										<div class="items">
+											<div class="row default">
+												{# <div class="col-sm-6">
+													<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/pict-person-1.png" alt="" class="img-responsive"></div>
+												</div> #}
+												<div class="col-sm-12">
+													<div class="desc">
+														<span class="name">Johan Kurniawan</span>
+														<div class="clear"></div>
+														<span class="position">DESIGNER</span>
+														<div class="clear height-20"></div>
+														<p><span class="grey">Joined:</span>
+															<strong>2009</strong></p>
+														<p><span class="grey">Academic Qualifications:</span></p>
+														<p>
+															<b>Bachelor of Interior Design</b> <br>
+															Raffles Design, Dong Hua University <br>
+															Shanghai, CHN <br>
+															2009
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="items">
+											<div class="row"> 
+												{# <div class="col-sm-6">
+													<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/pict-person-1.png" alt="" class="img-responsive"></div>
+												</div> #}
+												<div class="col-sm-12">
+													<div class="desc">
+														<span class="name">Noviani Setioso</span>
+														<div class="clear"></div>
+														<span class="position">Associate Designer</span>
+														<div class="clear height-20"></div>
+														<p><span class="grey">Joined:</span>
+															<strong>2014</strong></p>
+														<p><span class="grey">Academic Qualifications:</span></p>
+														<p><strong>Bachelor of Architects</strong><br />
+															University of Michigan, Ann Arbor<br />
+															Michigan, US<br />
+															2010</p>
+
+															<p><strong>Associate&rsquo;s Degree in Interior Design</strong><br />
+															Eastern Michigan University, Ypsilanti<br />
+															Michigan, US<br />
+															2008</p>
+
+															<p><strong>Work Experience:</strong><br />
+															JA Consultancy Pte Ltd, Singapore<br />
+															Associate Designer<br />
+															2010 - 2013</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div> <div class="clear"></div>
+					</div>
+
+				</div>
+				<div class="outers-block-default-slideabout">
+					<div class="row default">
+						<div class="col-md-12">
+							<div class="clear height-45"></div>
+							<div class="picts-slide-middle-about prelatife mw797 tengah">
+								<div id="carousel-about-middle" class="carousel fade" data-ride="carousel">
+									  <!-- Indicators -->
+									  <ol class="carousel-indicators">
+									    <li data-target="#carousel-about-middle" data-slide-to="0" class="active"></li>
+									    <li data-target="#carousel-about-middle" data-slide-to="1"></li>
+									    <li data-target="#carousel-about-middle" data-slide-to="2"></li>
+									    {# <li data-target="#carousel-about-middle" data-slide-to="3"></li> #}
+									  </ol>
+
+									  <!-- Wrapper for slides -->
+									  <div class="carousel-inner" role="listbox">
+									    {# <div class="item ">
+									      <img src="{{ app.request.baseurl }}/asset/images/pict-middle-about-1.jpg?{{ set_random }}" alt="...">
+									      <div class="carousel-caption">
+									      	<a href="{{ url('contactus') }}">VISIT GIANNI FURNITURE SHOWROOM AT BUKIT DARMO BOULEVARD</a>
+									      </div>
+									    </div> #}
+									    <div class="item active">
+									      <img src="{{ app.request.baseurl }}/asset/images/pict-middle-about-2.jpg?{{ set_random }}" alt="...">
+									      <div class="carousel-caption">
+									      	<a href="{{ url('contactus') }}">VISIT GIANNI FURNITURE SHOWROOM AT BUKIT DARMO BOULEVARD</a>
+									      </div>
+									    </div>
+									    <div class="item">
+									      <img src="{{ app.request.baseurl }}/asset/images/pict-middle-about-3.jpg?{{ set_random }}" alt="...">
+									      <div class="carousel-caption">
+									      	<a href="{{ url('contactus') }}">VISIT GIANNI FURNITURE SHOWROOM AT BUKIT DARMO BOULEVARD</a>
+									      </div>
+									    </div>
+									    <div class="item">
+									      <img src="{{ app.request.baseurl }}/asset/images/pict-middle-about-4.jpg?{{ set_random }}" alt="...">
+									      <div class="carousel-caption">
+									      	<a href="{{ url('contactus') }}">VISIT GIANNI FURNITURE SHOWROOM AT BUKIT DARMO BOULEVARD</a>
+									      </div>
+									    </div>
+									  </div>
+
+									</div>
+								<div class="back-shadow"></div>
+							</div>
+							<div class="clear height-50"></div>
+							<div class="clear height-50"></div>
+							<div class="height-30"></div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section clearfix cont-bottom-home-lih">
+	<div class="wrapper">
+		<div class="row default text-center">
+			<div class="col-md-12">
+				<div class="content-text text-center">
+						<h1 class="child-title-p">OUR COMMITMENT TO YOU</h1>
+					</div>
+					<div class="clear"></div>
+					<div class="visible-lg visible-md">
+						<h2 class="title">
+							Why Gianni as your Partner
+					</h2>
+					</div>
+					<div class="visible-xs visible-sm">
+						<h2 class="title">
+							Why Gianni as your Partner
+						</h2>
+					</div>
+					<div class="clear height-35"></div>
+					<div class="list-circle-bottoms">
+						<div class="row default">
+							<div class="col-md-4 icons-plus">
+								<div class="items">
+									<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/back-circle-pict-t1.png" alt="" class="img-responsive"></div>
+								</div>
+							</div>
+							<div class="col-md-4 icons-plus">
+								<div class="items">
+									<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/back-circle-pict-t2.png" alt="" class="img-responsive"></div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="items">
+									<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/back-circle-pict-t3.png" alt="" class="img-responsive"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear height-50"></div><div class="height-20"></div>
+					<div class="text-center">
+						<p>Contact Gianni Furniture&rsquo;s consultant regarding your appointment for a<br />tour to our showroom.</p>
+						<p class="mb-0"><strong>+62 31 732 5566</strong><br />
+							or <a href="{{ url('contactus') }}">click here</a> to contact us</p>
+					</div>
+					<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="clear"></div>
+{% endblock %}

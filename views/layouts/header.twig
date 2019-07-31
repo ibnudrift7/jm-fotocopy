@@ -1,0 +1,45 @@
+<h1 class="titlepage hidden">Gianni - Furniture & Interior Design Surabaya</h1>
+<header class="header">
+  <div class="wrapper">
+<span class="logo">
+      <a href="{{ url('homepage') }}">Gianni
+        <h2 class="tagline-header">Furniture & Interior Design</h2>
+      </a>
+  </span>
+    <nav class="nav right prelatife">
+    	<ul class="nav__menu">
+    				<li class="cl-effect-7 nav__item {% if menu == 'homepage' %}nav__item--current{% endif %}">
+    					<a href="{{ url('homepage') }}">HOME</a>
+    				</li>
+    				<li class="cl-effect-7 nav__item {% if menu == 'about' %}nav__item--current{% endif %} dropdown">
+    					<a href="{{ url('about') }}">ABOUT US</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url('about') }}#our-brand">Our Brand</a></li>
+                            <li><a href="{{ url('about') }}#our-showroom">Our Showroom</a></li>
+                            <li><a href="{{ url('about') }}#our-team">Our Team</a></li>
+                        </ul>
+    				</li>
+    				<li class="cl-effect-7 nav__item {% if menu == 'product' %}nav__item--current{% endif %}">
+    					<a href="{{ url('product') }}">PRODUCTS</a>
+    				</li>
+                    <li class="cl-effect-7 nav__item {% if menu == 'portfolio' %}nav__item--current{% endif %}">
+                        <a href="{{ url('portfolio') }}">PORTFOLIO</a>
+                    </li>
+    				<li class="cl-effect-7 nav__item {% if menu == 'service' %}nav__item--current{% endif %}">
+    					<a href="{{ url('service') }}">SERVICES</a>
+    				</li>
+    				<li class="cl-effect-7 nav__item {% if menu == 'contact' %}nav__item--current{% endif %}">
+    					<a href="{{ url('contactus') }}">CONTACT</a>
+    				</li>
+    	</ul>
+    	<div class="pos-abs info-header">
+    		<div class="text">
+    			TELEPHONE  &nbsp;<a href="tel:+62317325566">+62 31 732 5566</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			EMAIL  &nbsp;<a href="mailto:info@giannifurniture.com">info@giannifurniture.com</a>
+    		</div>
+    	</div>
+    </nav>
+    <div class="nav__trigger">
+    	<a href="#"><span></span></a>
+    </div>  </div>
+</header>

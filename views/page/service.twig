@@ -1,0 +1,141 @@
+{% extends layout %}
+{% block title %}Services - {% endblock %}
+{% block menu %}service{% endblock %}
+{% block content %}
+<section class="hero clearfix section--video">
+	<a class="hero__trigger" href="#content">Scroll Down</a>
+	<div class="hero__media hero__media--video" data-layzr="{{ app.request.baseurl }}/uploads/service-hero.jpg" data-layzr-bg>
+		<div class="hero__media-cover"></div>
+	</div>
+</section>
+
+<section class="section section--intro align-center clearfix section-homebwhitebl insides-pabout-inner">
+	<div class="wrapper">
+		<div class="clear height-15"></div>
+		<div class="row">
+			<div class="span11 center-block">
+				<div class="intro__block span9 center-block animate">
+					<div class="content-text">
+						<h1 class="child-title-p">SERVICES</h1>
+					</div>
+					<div class="clear"></div>
+					<div class="visible-lg visible-md">
+						<h2 class="title">
+							We&rsquo;ll go extra miles when it comes to satisfying <br>
+							your needs of a perfect furnishings
+					</h2>
+					</div>
+					<div class="visible-xs visible-sm">
+						<h2 class="title">
+							We&rsquo;ll go extra miles when it comes to satisfying <br>
+							your needs of a perfect furnishings
+						</h2>
+					</div>
+					<div class="mwdesc2-home tengah text-center content-text">
+						<p>Gianni Furniture has the complete realm and all requirement for home interior design - furnishing and styling. We have a fully equipped and fully working furniture workshop, filled with exceptional talents allowing us to deliver high craftmanship, luxurious finishes and superb details of furnitures. Gianni&rsquo;s professional specifiers and stylist also at their best when it comes to provide you hand-picked loose furnitures, accessories, and arts.</p>
+
+						<p>Let&rsquo;s talk about your needs, we will assist you for all your needs in home furnishings.</p>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="row default">
+					<div class="col-md-12 text-center">
+						<div class="clear height-50"></div>
+						<div class="content-text">
+							<h1 class="child-title-p">THE FULL REALM OF GIANNI&rsquo;S SERVICES</h1>
+						</div>
+						<div class="clear height-20"></div>
+						<div class="list-pict-services">
+							<div class="margn-lr2em">
+
+								<div class="row default">
+									<div class="col-md-4 col-sm-5">
+										<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/pict-circle-design-consultancy.png" alt="" class="img-responsive"></div>
+									</div>
+									<div class="col-md-8 col-sm-7">
+										<div class="desc">
+											<div class="hidden-xs">
+												<div class="clear height-50"></div><div class="height-35"></div>
+											</div>
+											<div class="visible-xs">
+												<div class="clear height-30"></div>
+											</div>
+											<h4 class="titles">DESIGN CONSULTANCY</h4>
+											<div class="clear"></div>
+											<p>Gianni&rsquo;s experienced designer will accompany you through all the process to build your dream home.</p>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+								<div class="row default">
+									<div class="col-md-8 col-sm-7">
+										<div class="desc text-right import">
+											<div class="hidden-xs">
+												<div class="clear height-50"></div><div class="height-35"></div>
+											</div>
+											<div class="visible-xs">
+												<div class="clear height-30"></div>
+											</div>
+											<h4 class="titles">FURNITURE MAKING</h4>
+											<div class="clear"></div>
+											<p>Our workshop is filled with cutting edge machineries to ensure perfections for the end results. We also have a team of talented craftsman that produces quality, luxurious and artistic products.</p>
+											<div class="clear"></div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-5">
+										<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/pict-circle-furniture-making.png" alt="" class="img-responsive"></div>
+									</div>
+								</div>
+								<div class="visible-xs clear height-20"></div>
+								<div class="row default mb-0">
+									<div class="col-md-4 col-sm-5">
+										<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/pict-circle-style-decor.png" alt="" class="img-responsive"></div>
+									</div>
+									<div class="col-md-8 col-sm-7">
+										<div class="desc">
+											<div class="hidden-xs">
+												<div class="clear height-50"></div><div class="height-35"></div>
+											</div>
+											<div class="visible-xs">
+												<div class="clear height-30"></div>
+											</div>
+											<h4 class="titles">STYLE & DECOR</h4>
+											<div class="clear"></div>
+											<p>Your dream room will be a better looking one with matching decorations and accessories. Our stylist will help you with all the mix and match and suggest you the best and the most ideal decor for each of your room.</p>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="clear"></div>
+								</div>
+							<div class="clear"></div>
+						</div>
+						<div class="height-30"></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section clearfix cont-bottom-home-lih">
+	<div class="wrapper">
+		<div class="row default text-center">
+			<div class="col-md-12">
+				<div class="clear"></div>
+				<div class="text-center">
+					<p>Contact Gianni Furniture&rsquo;s consultant regarding your appointment for a<br />tour to our showroom.</p>
+					<p class="mb-0"><strong>+62 31 732 5566</strong><br />
+						or <a href="{{ url('contactus') }}">click here</a> to contact us</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="clear"></div>
+{% endblock %}

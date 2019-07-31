@@ -1,0 +1,147 @@
+{% extends layout %}
+{% block title %}Our Quality - {% endblock %}
+{% block menu %}quality{% endblock %}
+{% block content %}
+<div class="outers-middle-contents prelatife">
+	<div class="ill-tops-pageinside pict-full prelatife">
+		<img src="{{ app.request.baseurl }}/asset/images/ill-our-quality.jpg" alt="" class="img-responsive">
+		<div class="poss-full-absl top250 pageinsidetopfull-pict">
+			<div class="insides-text text-center">
+				<h2>OUR QUALITY</h2> <div class="clear"></div>
+				<span>Expect only the best products from PT. Intan Chemical</span>
+			</div>
+		</div>
+	</div>
+
+	<section class="middle-insides-content">
+		<div class="prelatife container-insides"> 
+			<div class="clear height-50"></div><div class="height-30"></div>
+			<div class="content-text">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="text-center padding-lr5 mw750 tengah">
+							<span class="green">WHAT MAKES OUR QUALITY</span> <div class="clear"></div>
+							<span class="c1">Credibility & Excellence</span> <div class="clear"></div>
+							<span class="c2">Intan Chemical has become an accountable name that people can look up to in the taste industry in Indonesia. Intan Chemical is making sure that all the needs of creative products from our customer will be sufficient both in quantity and quality.</span> 
+							<div class="clear"></div>
+							<p>Intan Chemical&rsquo;s main investment is in the quality control department. We knew that when quality is prioritised, profit will follow. All of the hardwork is to build profit for a broader range of market, that is our customers&rsquo; success. We are proud of what we did, all the standard of practice and quality parameter were meant to build a strong and long partnership of chain businesses supply.&nbsp;</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="clear height-100"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="prelatife">
+			<div class="background-qlty1 prelatife">
+				<div class="description-offbottom-quality">
+					<div class="clear height-50"></div>
+					<div class="height-30"></div>
+					<div class="prelatife container-insides content-text text-center">
+						<span class="green">OUR DEVELOPMENT & PROCESS STANDARD</span><div class="clear"></div>
+						<span class="c1">Profit to our customers is our goal</span>
+						<div class="clear height-20"></div> 
+						<div class="mw878 tengah details-atas-respoquality">
+							<div class="row">
+								<div class="col-md-4 col-sm-4">
+									<div class="itemss w100">
+										<div class="pict"><img class="img-responsive" src="{{ app.request.baseurl }}/asset/images/banner-quality-1.jpg" alt=""></div>
+									</div>
+									<div class="descs visible-xs">
+										<div class="text">
+											TIGHT AND THOROUGH <br> QUALITY CHECKING <br> PARAMETER
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="itemss w100">
+										<div class="pict"><img class="img-responsive" src="{{ app.request.baseurl }}/asset/images/banner-quality-2.jpg" alt=""></div>
+									</div>
+									<div class="descs border-left visible-xs">
+										<div class="text">
+											ON TIME DELIVERY AND<br>SPOT-ON PRODUCTS
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="itemss w100">
+										<div class="pict"><img class="img-responsive" src="{{ app.request.baseurl }}/asset/images/banner-quality-3.jpg" alt=""></div>
+									</div>
+									<div class="descs border-left visible-xs">
+										<div class="text">
+											ON TIME DELIVERY AND<br>SPOT-ON PRODUCTS
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="background-qlty1 back2 prelatife hidden-xs">
+				<div class="description-offbottom-quality">
+					<div class="prelatife container-insides content-text text-center">
+						<div class="mw878 tengah">
+							<div class="row">
+								<div class="col-md-4 col-sm-4">
+									<div class="itemss">
+										<div class="descs">
+											<div class="text">
+												TIGHT AND THOROUGH <br> QUALITY CHECKING <br> PARAMETER
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="itemss">
+										<div class="descs border-left">
+											<div class="text">
+												PRODUCT INNOVATION <br>AND COMPREHENSIVE <br> MARKET DEVELOPMENT
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="itemss">
+										<div class="descs border-left">
+											<div class="text">
+												ON TIME DELIVERY AND<br>SPOT-ON PRODUCTS
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</section>
+
+	<div class="clear"></div>
+</div>
+<script type="text/javascript">
+$(function() {
+	
+	$(window).resize(function(){
+		var heightpic2 = $('.ill-tops-pageinside img').height();
+		$('.top250.pageinsidetopfull-pict').css("height", heightpic2+"px");
+	});
+	$(window).load(function(){
+		var heightpic1 = $('.ill-tops-pageinside img').height();
+		$('.top250.pageinsidetopfull-pict').css("height", heightpic1+"px");
+	});
+	
+});
+</script>
+{% endblock %}

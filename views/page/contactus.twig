@@ -1,0 +1,165 @@
+{% extends layout %}
+{% block title %}Contact - {% endblock %}
+{% block menu %}contact{% endblock %}
+{% block content %}
+<section class="section section--intro align-center clearfix section-homebwhitebl insides-pabout-inner section-topcont-contact">
+	<div class="wrapper">
+		<div class="clear height-15"></div>
+		<div class="row">
+			<div class="span11 center-block">
+				<div class="intro__block span9 center-block animate mb-0">
+					<div class="content-text">
+						<h1 class="child-title-p">CONTACT US</h1>
+					</div>
+					<div class="clear"></div>
+					<div class="visible-lg visible-md">
+						<h2 class="title">
+							Let&rsquo;s schedule your visit to<br />
+							Gianni Furniture&rsquo;s Showroom
+					</h2>
+					</div>
+					<div class="visible-xs visible-sm">
+						<h2 class="title">
+							Let&rsquo;s schedule your visit to<br />
+							Gianni Furniture&rsquo;s Showroom
+						</h2>
+					</div>
+					<div class="mwdesc2-home tengah text-center content-text address">
+						<p><strong>Address:</strong><br />
+						Jl. Raya Bukit Darmo Boulevard No. 10-D<br />
+						Surabaya - East Java. Indonesia<br />
+						<br />
+						<a href="https://www.google.co.id/maps/place/Jl.+Bukit+Darmo+Boulevard,+Kota+SBY,+Jawa+Timur/@-7.2859218,112.6796793,18z/data=!4m2!3m1!1s0x2dd7fc3bb52ca0e1:0xa8a721852e415a28?hl=id" target="_blank"><img src="{{ app.request.baseurl }}/asset/images/icn-location-green.png" class="inline-pict vtop" alt=""> &nbsp;View location at google map</a></p>
+						<p><strong>PHONE: </strong><br />
+						+62 31 732 3366, 732 5566</p>
+
+						<p><strong>EMAIL:</strong><br />
+						<a href="mailto:info@giannifurniture.com">INFO@GIANNIFURNITURE.COM</a></p>
+
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section clearfix cont-bottom-home-lih">
+	<div class="wrapper">
+		<div class="outers-box-form tengah">
+				<div class="clear height-10"></div>
+				<h2 class="title text-center">
+							Online Enquiry Form
+				</h2>
+				<div class="clear height-10"></div>
+				<div class="height-30"></div>
+					<div class="box-form">
+						{% if error|length > 0 %}
+						    <div class="alert alert-danger bg-danger">
+						    	<button type="button" class="close" data-dismiss="alert">&times;</button>
+							    <h6>Please fix the following input errors:</h6>
+							    <ul>
+							    	{% for dataError in error %}
+							    	<li>{{ dataError }}</li>
+							    	{% endfor %}
+							    </ul>
+						    </div>
+						{% endif %}
+						{% if msg == 'error_message' %}
+						    <div class="alert alert-danger">
+						    	<button type="button" class="close" data-dismiss="alert">&times;</button>
+							    Please Check Captcha for sending contact form! 
+						    </div>
+						{% endif %}
+						{% if msg == 'success' %}
+						    <div class="alert alert-success">
+						    	<button type="button" class="close" data-dismiss="alert">&times;</button>
+							    Thank you for contacting us! we will respond to you shortly.
+						    </div>
+						{% endif %}
+						<form method="post" action="" role="form">
+							<div class="row default">
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+									    <label for="exampleInputName">Name</label>
+									    <input type="text" name="Contact[name]" class="form-control" id="exampleInputName"  required>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+									    <label for="exampleInputEmail">Email</label>
+									    <input type="email" name="Contact[email]" class="form-control" id="exampleInputEmail"  required>
+									</div>
+								</div>
+							</div>
+							<div class="row default">
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+									    <label for="exampleInputPhone">Phone</label>
+									    <input type="text" name="Contact[phone]" class="form-control" id="exampleInputPhone"  required>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+									    <label for="exampleInputCompany">Company</label>
+									    <input type="text" name="Contact[company]" class="form-control" id="exampleInputCompany"  required>
+									</div>
+								</div>
+							</div>
+							<div class="row default">
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+									    <label for="exampleInputAddr">Address</label>
+									    <div class="clear"></div>
+									    <textarea name="Contact[address]" rows="3" class="form-control" id="exampleInputAddr" required></textarea>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+									    <label for="exampleInputCountry">Country</label> <div class="clear"></div>
+									    <input type="text" name="Contact[country]" class="form-control" id="exampleInputCountry" required>
+									</div>
+								</div>
+							</div>
+							<div class="row default">
+								<div class="col-md-12 col-sm-12">
+									<div class="form-group">
+									    <label for="exampleInputMessage">Message</label> 
+									    <div class="clear"></div>
+									    <textarea name="Contact[message]" rows="4" class="form-control" required></textarea>
+
+									</div>
+								</div>
+							</div>
+							<div class="row default">
+								<div class="col-md-12 col-sm-12">
+									<div class="fright-inpd">
+										<div class="form-group mb-0">
+											<div class="fleft">
+												<div class="g-recaptcha" data-sitekey="6Le95xsTAAAAAK8PBPtxApoRPAVAUXD5ers_UIji"></div>
+											</div>
+											<div class="fright margin-left-30">
+												<div class="clear height-40 hidden-xs"></div>
+												<div class="visible-xs clear height-10"></div>
+												<button type="submit" class="btn btn-default btns-submit-bt">SUBMIT</button>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form> 
+						<div class="clear"></div>
+					</div>
+
+				<div class="clear"></div>
+			</div>
+		<div class="clear"></div>
+	</div>
+</section>
+<div class="clear"></div>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+{% endblock %}

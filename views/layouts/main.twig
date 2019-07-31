@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>{% block title %}{% endblock %} Gianni Furniture Surabaya - Custom Furniture, Bedroom & Living Room Interior Design</title>
+	<meta name="keywords" content="Gianni Furniture Surabaya - Custom Furniture, Bedroom & Living Room Interior Design">
+	<meta name="description" content="Gianni Furniture Surabaya - Custom Furniture, Bedroom & Living Room Interior Design">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link rel="stylesheet" type="text/css" href="{{ app.request.baseurl }}/asset/css/comon.css" />
+
+    <link rel="Shortcut Icon" href="{{ app.request.baseurl }}/asset/images/favicon.png" />
+	<link rel="icon" type="image/ico" href="{{ app.request.baseurl }}/asset/images/favicon.png" />
+	<link rel="icon" type="image/x-icon" href="{{ app.request.baseurl }}/asset/images/favicon.png" />
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{{ app.request.baseurl }}/asset/bootstrap-3/css/bootstrap.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="{{ app.request.baseurl }}/asset/css/screen.css" />
+	<link rel="stylesheet" type="text/css" href="{{ app.request.baseurl }}/asset/css/styles.css">
+
+	<!-- --------- Media Css ----------- -->
+	<link rel="stylesheet" type="text/css" href="{{ app.request.baseurl }}/asset/css/media.styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<!-- Preloader -->
+    {# <div id="preloader">
+        <div id="statusloader">&nbsp;</div>
+    </div> #}    
+{% block maincontent %}{% endblock %}
+	<script type="text/javascript" src="asset/js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="asset/bootstrap-3/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="{{ app.request.baseurl }}/asset/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+				//Image hover
+				$(".serv_block").on('mouseover',function(){
+						var info=$(this).find("img");
+						info.stop().animate({opacity:0.5},100);
+						$(".preloader").css({'background':'none'});
+					}
+				);
+				$(".serv_block").on('mouseout',function(){
+						var info=$(this).find("img");
+						info.stop().animate({opacity:1},100);
+						$(".preloader").css({'background':'none'});
+					}
+				);
+
+				
+			$(".toScroll").on('click', function(){
+				var id = $(this).attr("data-id");
+				//alert(id);
+				$.scrollTo('#'+id , 1500);
+			});
+
+			{% if hero_image == true and carousel_hide == false %}
+			$('.carousel').carousel({
+			  interval: 5000,
+			});
+			{% endif %}
+
+		});
+	</script>
+	<script type="text/javascript" src="asset/js/app.min.js"></script>
+
+	{% if view_js_light == true %}
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.15/css/lightgallery.css"/>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.15/js/lightgallery-all.min.js"></script>
+	    <script>
+	    	 $(document).ready(function() {
+				$(".light-gallery").lightGallery({
+					thumbnail:false,
+				    animateThumb: false,
+				    showThumbByDefault: false
+				});
+			});
+	    </script>
+    {% endif %}
+    <script type="text/javascript">
+var message="Right Click Disabled!";
+function clickIE4(){
+if (event.button==2){
+// alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+// alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false");
+</script>
+</html>

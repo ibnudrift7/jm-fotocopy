@@ -1,0 +1,14 @@
+{% extends 'layouts/main.twig' %}
+{% block maincontent %}
+{% if hero_image == true %}
+<body class=" home">
+{% else %}
+<body class=" single">
+{% endif %}
+		<div class="content" id="content">
+			{% include "/layouts/header.twig" with { 'menu': block('menu') } %}
+			{% block content %}{% endblock %}
+			{% include "/layouts/footer.twig" with { 'menu': block('menu') } %}
+		</div>
+</body>
+{% endblock %}
